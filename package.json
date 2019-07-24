@@ -1,0 +1,26 @@
+{
+  "name": "csmarmybuilder",
+  "version": "1.0.0",
+  "description": "## Project Aim  - To be able to build 40k game lists using an app.  - Will use vanilla JS and HTML to refresh my knowledge  - Will test with Jest",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "jest": "^24.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stonefarmer9/CSM40kBuilder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stonefarmer9/CSM40kBuilder/issues"
+  },
+  "homepage": "https://github.com/stonefarmer9/CSM40kBuilder#readme"
+}
