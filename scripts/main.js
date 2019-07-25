@@ -28,17 +28,21 @@ function listUnits(){
   unitList.forEach(function(unit){
       const list = document.getElementById("list");
       const newItem = document.createElement("li");
-      const button = document.createElement("button");
-      button.setAttribute("id", `${unit.name}`)
-      newItem.appendChild(button)
-      button.innerHTML = "ADD"
-      button.addEventListener("click", ()=> addUnit(unit.name))
-      list.appendChild(document.createTextNode(
+      newItem.appendChild(document.createTextNode(
        `${unit.name}
         ${unit.pointsPerModel}
         ${unit.role}`))
+      newItem.appendChild(makeButton(unit))
       list.appendChild(newItem)
     })
+}
+
+function makeButton(unit){
+  const button = document.createElement("button");
+  button.setAttribute("id", `${unit.name}`);
+  button.innerHTML = "Add";
+  button.addEventListener("click", ()=> addUnit(unit.name));
+  return button
 }
 
 listUnits();
