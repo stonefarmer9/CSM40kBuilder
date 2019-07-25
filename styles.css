@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.Container {
+  background-color: blue;
+  display: grid;
+  grid-template-rows: [one] 50px [two] 50px [rowEnd];
+  grid-template-columns: [one] 150px [two] 300px [three] 150px [end];
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+  text-align: center;
+}
+
+.unitList {
+  background-color: red;
+  grid-column: one / two;
+  grid-row: one / rowEnd;
+}
+
+.roster {
+  background-color: green;
+  grid-column: three / end;
+  grid-row: one / rowEnd;
+}
